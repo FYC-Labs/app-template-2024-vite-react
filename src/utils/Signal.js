@@ -1,4 +1,5 @@
 /* eslint-disable no-param-reassign */
+// USE THIS FILE UNTIL WE AHVE SDK SET UP
 import { signal } from '@preact/signals-react';
 
 const updateSignal = (signalToUpdate, newVal) => {
