@@ -40,6 +40,7 @@ const $modalSignal = Signal({
 const UiKit = () => (
   <Container fluid className="bg-secondary pb-24">
     <h1 className="text-center py-16 text-decoration-underline">Hello, Bootstrap 5 & React-Bootstrap!</h1>
+
     {/* Table of Contents */}
     <Row className="text-center">
       <a href="https://react-bootstrap.netlify.app/" className="mb-16">Go to React Bootstrap Docs</a>
@@ -370,7 +371,7 @@ const UiKit = () => (
 
           </Col>
           <Col sm={6} className="my-auto">
-            <p>You can use custom attributes for any one off things that happen in the inputs. Lets Try to keep all form signal values at the root otherwise the signal won update properly without the customOnChange.</p>
+            <p>You can use custom attributes for any one of these that happen in the inputs. Lets try to keep all form signal values at the root otherwise the signal won update properly without the custom attributes.</p>
           </Col>
         </Row>
         <hr />
@@ -572,12 +573,10 @@ const UiKit = () => (
           </Dropdown.Menu>
         </Dropdown>
         <>
-
           <Dropdown className="mb-8" autoClose="inside">
             <Dropdown.Toggle id="dropdown-autoclose-inside">
               Clickable Outside
             </Dropdown.Toggle>
-
             <Dropdown.Menu>
               <Dropdown.Item href="">Menu Item</Dropdown.Item>
               <Dropdown.Item href="">Menu Item</Dropdown.Item>
@@ -589,7 +588,6 @@ const UiKit = () => (
             <Dropdown.Toggle id="dropdown-autoclose-outside">
               Clickable Inside
             </Dropdown.Toggle>
-
             <Dropdown.Menu>
               <Dropdown.Item href="">Menu Item</Dropdown.Item>
               <Dropdown.Item href="">Menu Item</Dropdown.Item>
@@ -601,7 +599,6 @@ const UiKit = () => (
             <Dropdown.Toggle id="dropdown-autoclose-false">
               Manual Close
             </Dropdown.Toggle>
-
             <Dropdown.Menu>
               <Dropdown.Item href="">Menu Item</Dropdown.Item>
               <Dropdown.Item href="">Menu Item</Dropdown.Item>
