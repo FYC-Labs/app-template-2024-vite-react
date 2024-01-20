@@ -45,7 +45,7 @@ const UiKit = () => (
     <Row className="text-center">
       <a href="https://react-bootstrap.netlify.app/" className="mb-16">Go to React Bootstrap Docs</a>
       <Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
+        <Dropdown.Toggle variant="white" id="dropdown-basic">
           Table of Contents
         </Dropdown.Toggle>
         <Dropdown.Menu className="text-center">
@@ -282,8 +282,8 @@ const UiKit = () => (
 
     {/* Navs & Tabs */}
     <Row className="text-center" id="navs">
+      <h2 className="text-decoration-underline">Navs</h2>
       <Col sm={{ span: 6, offset: 3 }} className="bg-body-tertiary">
-        <h2 className="text-decoration-underline">Navs</h2>
         <Nav className="justify-content-center" activeKey="/home">
           <Nav.Item>
             <Nav.Link href="/home">Active</Nav.Link>
