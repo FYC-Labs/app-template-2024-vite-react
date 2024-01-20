@@ -18,7 +18,7 @@ const Home = () => (
             Feel free to browse through the various components and customize them to fit your project&apos;s
             figma designs and needs. If you have any questions or need assistance, don&apos;t hesitate to reach out.
           </p>
-          <p className="bold">Happy coding!</p>
+          <p>Happy coding!</p>
         </div>
         <hr />
         <Link to="/ui-kit" className="fs-5">Go to Ui Kit</Link>
