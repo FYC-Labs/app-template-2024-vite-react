@@ -15,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ui-kit" element={<UiKit />} />
           <Route path="*" element={<NotFound />} />
+          {/* TODO: Ross */}
           {/* <PublicRoute path="/public" element={<div>public</div>} />
           <PrivateRoute path="/private" element={<div>private</div>} /> */}
         </Routes>
