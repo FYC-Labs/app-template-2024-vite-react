@@ -17,12 +17,17 @@ import Alerts from './_components/Alerts';
 import Badges from './_components/Badges';
 import ProgressBars from './_components/ProgressBars';
 import Loaders from './_components/Loaders';
+import Colors from './_components/Colors';
+import Toasts from './_components/Toasts';
 
 const UiKit = () => (
   <Container fluid className="bg-secondary pb-24">
     <h1 className="text-center py-16 text-decoration-underline">Hello, Bootstrap 5 & React-Bootstrap!</h1>
 
     <TableOfContents />
+    <hr />
+
+    <Colors />
     <hr />
 
     <Headers />
@@ -68,6 +73,9 @@ const UiKit = () => (
     <hr />
 
     <Loaders />
+    <hr />
+
+    <Toasts />
 
   </Container>
 );

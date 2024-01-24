@@ -8,7 +8,9 @@ const TableOfContents = () => (
         Table of Contents
       </Dropdown.Toggle>
       <Dropdown.Menu className="text-center">
-        <Nav.Link href="#header" className="hover">Headers</Nav.Link>
+        <Nav.Link href="#colors" className="hover">Colors</Nav.Link>
+        <Dropdown.Divider className="m-0" />
+        <Nav.Link href="#header" className="hover">Typography</Nav.Link>
         <Dropdown.Divider className="m-0" />
         <Nav.Link href="#buttons" className="hover">Buttons</Nav.Link>
         <Dropdown.Divider className="m-0" />
@@ -37,6 +39,8 @@ const TableOfContents = () => (
         <Nav.Link href="#progress" className="hover">Progress Bar</Nav.Link>
         <Dropdown.Divider className="m-0" />
         <Nav.Link href="#loader" className="hover">Loader</Nav.Link>
+        <Dropdown.Divider className="m-0" />
+        <Nav.Link href="#toasts" className="hover">Toasts</Nav.Link>
       </Dropdown.Menu>
     </Dropdown>
   </Row>

@@ -1,11 +1,10 @@
 import { useRoutes, Navigate } from 'react-router-dom';
 import { $auth } from '@src/signals/global.signals';
-import Redirect from '@src/components/global/Redirect';
 import ContentWrapper from '@src/components/global/ContentWrapper';
 
 const PrivateRouteComponent = ({ element: Element, noNavbar, ...rest }) => {
   if (!$auth.value.isSignedIn && !$auth.value.isLoading) {
-    return <Redirect />;
+    window.location.href = `/?redirect=${window.location.pathname}`;
   }
 
   return (

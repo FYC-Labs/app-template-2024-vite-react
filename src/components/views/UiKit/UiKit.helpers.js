@@ -8,6 +8,11 @@ export const $formSignal = Signal({
   date: new Date(),
 });
 
+export const $view = Signal({
+  activeModal: '',
+  activeTab: '',
+});
+
 export const $modalSignal = Signal({
   id: '',
 });
