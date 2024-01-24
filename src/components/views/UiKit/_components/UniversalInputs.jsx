@@ -2,7 +2,7 @@ import { Row, Col, Form } from 'react-bootstrap';
 import DatePicker from '@src/components/global/Inputs/DatePicker';
 import SelectInput from '@src/components/global/Inputs/SelectInput';
 import UniversalInput from '@src/components/global/Inputs/UniversalInput';
-import { $formSignal } from '../UiKit.helpers';
+import { $formUiKit } from '../UiKit.helpers';
 
 const UniversalInputs = () => (
   <Row className="text-start" id="universal-inputs">
@@ -13,7 +13,7 @@ const UniversalInputs = () => (
           <pre>
             <code>
               {`
-                    const $formSignal = Signal({
+                    const $formUiKit = Signal({
                       name: '',
                       number: 0,
                       password: '',
@@ -39,7 +39,7 @@ const UniversalInputs = () => (
                     <UniversalInput
                       name="name"
                       placeholder="Name"
-                      signal={$formSignal}
+                      signal={$formUiKit}
                     />
                 `}
             </code>
@@ -50,7 +50,7 @@ const UniversalInputs = () => (
           <UniversalInput
             name="name"
             placeholder="Name"
-            signal={$formSignal}
+            signal={$formUiKit}
             className="mb-8"
           />
         </Col>
@@ -66,7 +66,7 @@ const UniversalInputs = () => (
                      name="number"
                      type="number"
                      placeholder={0}
-                     signal={$formSignal}
+                     signal={$formUiKit}
                      className="mb-8"
                    />
                 `}
@@ -79,7 +79,7 @@ const UniversalInputs = () => (
             name="number"
             type="number"
             placeholder={0}
-            signal={$formSignal}
+            signal={$formUiKit}
             className="mb-8"
           />
         </Col>
@@ -95,7 +95,7 @@ const UniversalInputs = () => (
                       name="password"
                       type="password"
                       placeholder="*******"
-                      signal={$formSignal}
+                      signal={$formUiKit}
                       className="mb-8"
                     />
                 `}
@@ -108,7 +108,7 @@ const UniversalInputs = () => (
             name="password"
             type="password"
             placeholder="*******"
-            signal={$formSignal}
+            signal={$formUiKit}
             className="mb-8"
           />
         </Col>
@@ -123,7 +123,7 @@ const UniversalInputs = () => (
                     <SelectInput
                       name="select"
                       defaultValue="Select..."
-                      signal={$formSignal}
+                      signal={$formUiKit}
                       className="mb-8"
                       options={[
                         {
@@ -149,7 +149,7 @@ const UniversalInputs = () => (
           <SelectInput
             name="select"
             defaultValue="Select..."
-            signal={$formSignal}
+            signal={$formUiKit}
             className="mb-8"
             options={[
               {
@@ -177,7 +177,7 @@ const UniversalInputs = () => (
                     <Form.Label>Date Input</Form.Label>
                     <DatePicker
                       name="date"
-                      signal={$formSignal}
+                      signal={$formUiKit}
                       className="mb-8"
                     />
                 `}
@@ -188,7 +188,7 @@ const UniversalInputs = () => (
           <Form.Label>Date Input</Form.Label>
           <DatePicker
             name="date"
-            signal={$formSignal}
+            signal={$formUiKit}
             className="mb-8"
           />
         </Col>

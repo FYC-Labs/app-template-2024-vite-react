@@ -1,19 +1,19 @@
 import { Row, Col, Toast, Button } from 'react-bootstrap';
-import { $view } from '../UiKit.helpers';
+import { $viewUiKit } from '../UiKit.helpers';
 
 const Toasts = () => (
   <Row className="text-center" id="toasts">
     <h2 className="text-decoration-underline">Toasts</h2>
     <Col md={6} className="mb-2">
       <Button
-        onClick={() => $view.update({
-          id: 'showA',
+        onClick={() => $viewUiKit.update({
+          activeModal: 'showA',
         })}
         className="mb-2"
       >
         Toggle Toast <strong>with</strong> Animation
       </Button>
-      <Toast show={$view.value.id === 'showA'} onClose={() => $view.reset()}>
+      <Toast show={$viewUiKit.value.activeModal === 'showA'} onClose={() => $viewUiKit.reset()}>
         <Toast.Header>
           <strong className="me-auto">Bootstrap</strong>
           <small>11 mins ago</small>
@@ -23,14 +23,14 @@ const Toasts = () => (
     </Col>
     <Col md={6} className="mb-2">
       <Button
-        onClick={() => $view.update({
-          id: 'showB',
+        onClick={() => $viewUiKit.update({
+          activeModal: 'showB',
         })}
         className="mb-2"
       >
         Toggle Toast <strong>without</strong> Animation
       </Button>
-      <Toast onClose={() => $view.reset()} show={$view.value.id === 'showB'} animation={false}>
+      <Toast onClose={() => $viewUiKit.reset()} show={$viewUiKit.value.activeModal === 'showB'} animation={false}>
         <Toast.Header>
           <strong className="me-auto">Bootstrap</strong>
           <small>11 mins ago</small>
