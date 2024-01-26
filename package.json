@@ -16,6 +16,7 @@
     "react-bootstrap": "^2.10.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
+    "vite-plugin-svgr": "^4.2.0",
     "yalc": "^1.0.0-pre.53"
   },
   "devDependencies": {
