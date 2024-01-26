@@ -6,7 +6,6 @@ import NotFound from '@src/components/views/NotFound';
 import Home from '@src/components/views/Home';
 import PublicRoutes from '@src/components/global/PublicRoutes';
 import PrivateRoutes from '@src/components/global/PrivateRoutes';
-import ContentWrapper from './components/global/ContentWrapper';
 
 function App() {
   return (
