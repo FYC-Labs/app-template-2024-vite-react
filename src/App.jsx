@@ -15,24 +15,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/ui-kit" element={<UiKit />} />
         <Route path="*" element={<NotFound />} />
-        {/* NOTE: public routes nest inside this Route */}
-        <Route
-          element={
-            <ContentWrapper>
-              <PublicRoutes />
-            </ContentWrapper>
-          }
-        >
+        <Route element={<PublicRoutes />}>
+          {/* NOTE: public routes go here */}
           <Route path="/public" element={<h1>Public Route</h1>} />
         </Route>
-        {/* NOTE: private routes nest inside this Route */}
-        <Route
-          element={
-            <ContentWrapper>
-              <PrivateRoutes />
-            </ContentWrapper>
-          }
-        >
+        <Route element={<PrivateRoutes />}>
+          {/* NOTE: private routes go here */}
           <Route path="/private" element={<h1>Private Route</h1>} />
         </Route>
       </Routes>
