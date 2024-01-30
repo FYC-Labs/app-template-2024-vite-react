@@ -1,5 +1,5 @@
 /* eslint-disable implicit-arrow-linebreak */
-import { $auth } from '@src/signals/global.signals';
+import { $auth } from 'tools-fyc-react/signals';
 import { Container } from 'react-bootstrap';
 import Loader from '@src/components/global/Loader';
 

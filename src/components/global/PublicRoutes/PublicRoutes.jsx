@@ -1,5 +1,5 @@
 import { Navigate, Outlet } from 'react-router-dom';
-import { $auth } from '@src/signals/global.signals';
+import { $auth } from 'tools-fyc-react/signals';
 import ContentWrapper from '../ContentWrapper';
 
 const PublicRoutes = () => {
