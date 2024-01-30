@@ -1,7 +1,7 @@
 import sleep from 'tools-fyc-react/utils/sleep';
 
 async function getUsers() {
-  await sleep(300);
+  await sleep(1500);
   return {
     firstName: 'Justin',
     lastName: 'Fortier',

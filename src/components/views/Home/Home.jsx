@@ -2,14 +2,17 @@ import { useEffectAsync } from 'tools-fyc-react/utils';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Loadable from '@src/components/global/Loadable';
-import { $detail, $user } from 'tools-fyc-react/signals';
-import { fetchAndSetSignal } from 'tools-fyc-react/signals/utils';
+import { $detail } from 'tools-fyc-react/signals';
 import users from '@src/api/users.api';
+import { fetchAndSetSignal } from 'tools-fyc-react/signals/utils';
 
 const Home = () => {
   useEffectAsync(async () => {
-    await fetchAndSetSignal($detail, users.get());
-    await fetchAndSetSignal($user, users.get());
+    await fetchAndSetSignal({
+      signal: $detail,
+      method: users.get,
+      params: { id: 1 },
+    });
   });
 
   return (
@@ -19,7 +22,7 @@ const Home = () => {
           <Col sm={{ span: 8, offset: 2 }}>
             <div>
               <h1 className="mb-0">Welcome to FYC&apos;s</h1>
-              <h1>{$detail.value?.title}</h1>
+              <h1>{$detail.value?.firstName}</h1>
               <hr />
               <p>
                 Brace yourself for an epic journey through our collection of components, where coding is as
