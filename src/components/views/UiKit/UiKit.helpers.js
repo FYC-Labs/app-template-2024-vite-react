@@ -1,4 +1,4 @@
-import Signal from '@src/utils/Signal';
+import { Signal } from 'tools-fyc-react/signals';
 
 export const $viewUiKit = Signal({
   activeModal: '',

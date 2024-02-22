@@ -7,3 +7,20 @@ html, body {
 .hover:hover {
   font-weight: bold;
 }
+
+.form-control-loadable {
+  color: $dark !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: all 0.2s;
+  height: 32px;
+  background-color: $primary !important;
+}
+
+.text-loadable {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 5px 5px 5px 5px !important;
+  transition: all 0.2s;
+  background-color: $primary !important;
+}
