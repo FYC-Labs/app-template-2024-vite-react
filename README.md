@@ -1,3 +1,11 @@
+# FYC Template for React Projects built with Vite
+
+Please see below these notes for a readme that you can use for your project. 
+
+## Current Status
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/7efff12ae6b4d65a3dcf/maintainability)](https://codeclimate.com/repos/65d6b800671d0200dfc32a2f/maintainability)
+
 # Project Name
 
 Welcome to [Your Project Name]! 🚀

@@ -10,7 +10,8 @@ met:
       copyright notice, this list of conditions and the following
       disclaimer in the documentation and/or other materials provided
       with the distribution.
-  - Neither the name of FYC Labs nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+  - Neither the name of FYC Labs nor the names of its contributors may be used to endorse 
+    or promote products derived from this software without specific prior written permission.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
