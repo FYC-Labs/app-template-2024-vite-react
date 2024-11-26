@@ -1,5 +1,5 @@
 import { Outlet, Navigate } from 'react-router-dom';
-import { $auth } from 'tools-fyc-react/signals';
+import { $auth } from '@fyclabs/tools-fyc-react/signals';
 import ContentWrapper from '../ContentWrapper';
 
 const PrivateRoutes = () => {

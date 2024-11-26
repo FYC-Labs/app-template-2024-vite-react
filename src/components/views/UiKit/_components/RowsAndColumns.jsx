@@ -1,7 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 
 const RowsAndColumns = () => (
-  <Row className="text-center" id="row-col">
+  <Row className="text-center mt-48" id="row-col">
     <Col sm={{ span: 6, offset: 3 }}>
       <h2 className="text-decoration-underline">Rows & Columns</h2>
       <Row>

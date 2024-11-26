@@ -64,18 +64,13 @@ $new-utilities: (
 }
 
 $utilities: map-merge($utilities, $new-utilities);
-
 $add-map: ();
 @each $name, $value in $add-values {
   $add-map: map.set($add-map, $name, add-values($name, $value));
 }
-
 $utilities: map-merge($utilities, $add-map);
-
 $responsive-map: ();
-
 @each $value in $responsive {
   $responsive-map: map.set($responsive-map, $value, set-responsive($value));
 }
-
 $utilities: map-merge($utilities, $responsive-map);

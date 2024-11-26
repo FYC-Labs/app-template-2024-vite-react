@@ -5,7 +5,7 @@ import UniversalInput from '@src/components/global/Inputs/UniversalInput';
 import { $formUiKit } from '../UiKit.helpers';
 
 const UniversalInputs = () => (
-  <Row className="text-start" id="universal-inputs">
+  <Row className="text-start mt-48" id="universal-inputs">
     <Col sm={{ span: 10, offset: 1 }}>
       <h2 className="text-decoration-underline text-center">Universal Inputs</h2>
       <Row>
@@ -13,13 +13,13 @@ const UniversalInputs = () => (
           <pre>
             <code>
               {`
-                    const $formUiKit = Signal({
-                      name: '',
-                      number: 0,
-                      password: '',
-                      select: null,
-                      date: new Date(),
-                    });
+                const $formUiKit = Signal({
+                  name: '',
+                  number: 0,
+                  password: '',
+                  select: null,
+                  date: new Date(),
+                });
                 `}
             </code>
           </pre>
@@ -35,21 +35,21 @@ const UniversalInputs = () => (
           <pre>
             <code>
               {`
-                    <Form.Label>Name</Form.Label>
-                    <UniversalInput
-                      name="name"
-                      placeholder="Name"
-                      signal={$formUiKit}
-                    />
+                <Form.Label>Text</Form.Label>
+                <UniversalInput
+                  name="text"
+                  placeholder="Text"
+                  signal={$formUiKit}
+                />
                 `}
             </code>
           </pre>
         </Col>
         <Col sm={6} className="my-auto">
-          <Form.Label>Name</Form.Label>
+          <Form.Label>Text</Form.Label>
           <UniversalInput
-            name="name"
-            placeholder="Name"
+            name="text"
+            placeholder="Text"
             signal={$formUiKit}
             className="mb-8"
           />
@@ -61,14 +61,14 @@ const UniversalInputs = () => (
           <pre>
             <code>
               {`
-                   <Form.Label>Number</Form.Label>
-                   <UniversalInput
-                     name="number"
-                     type="number"
-                     placeholder={0}
-                     signal={$formUiKit}
-                     className="mb-8"
-                   />
+                <Form.Label>Number</Form.Label>
+                <UniversalInput
+                  name="number"
+                  type="number"
+                  placeholder={0}
+                  signal={$formUiKit}
+                  className="mb-8"
+                />
                 `}
             </code>
           </pre>
@@ -90,14 +90,14 @@ const UniversalInputs = () => (
           <pre>
             <code>
               {`
-                    <Form.Label>Password</Form.Label>
-                    <UniversalInput
-                      name="password"
-                      type="password"
-                      placeholder="*******"
-                      signal={$formUiKit}
-                      className="mb-8"
-                    />
+                <Form.Label>Password</Form.Label>
+                <UniversalInput
+                  name="password"
+                  type="password"
+                  placeholder="*******"
+                  signal={$formUiKit}
+                  className="mb-8"
+                />
                 `}
             </code>
           </pre>
@@ -119,27 +119,109 @@ const UniversalInputs = () => (
           <pre>
             <code>
               {`
-                    <Form.Label>Select Input</Form.Label>
-                    <SelectInput
-                      name="select"
-                      defaultValue="Select..."
-                      signal={$formUiKit}
-                      className="mb-8"
-                      options={[
-                        {
-                          label: 'Select...',
-                          value: null,
-                        },
-                        {
-                          label: 'Yes',
-                          value: true,
-                        },
-                        {
-                          label: 'No',
-                          value: false,
-                        },
-                      ]}
-                    />
+                <Form.Label>isValid</Form.Label>
+                <UniversalInput
+                  name="isValid"
+                  type="text"
+                  placeholder="isValid"
+                  signal={$formUiKit}
+                  className="mb-8"
+                  isValid
+                />
+                `}
+            </code>
+          </pre>
+        </Col>
+        <Col sm={6} className="my-auto">
+          <Form.Label>isValid</Form.Label>
+          <UniversalInput
+            name="isValid"
+            type="text"
+            placeholder="isValid"
+            signal={$formUiKit}
+            className="mb-8"
+            isValid
+          />
+        </Col>
+      </Row>
+      <hr />
+      <Row>
+        <Col sm={6}>
+          <pre>
+            <code>
+              {`
+                <Form.Label>isInvalid</Form.Label>
+                <UniversalInput
+                  name="isInvalid"
+                  type="text"
+                  placeholder="isInvalid"
+                  signal={$formUiKit}
+                  className="mb-8"
+                  isInvalid
+                />
+                `}
+            </code>
+          </pre>
+        </Col>
+        <Col sm={6} className="my-auto">
+          <Form.Label>isInvalid</Form.Label>
+          <UniversalInput
+            name="isInvalid"
+            type="text"
+            placeholder="isInvalid"
+            signal={$formUiKit}
+            className="mb-8"
+            isInvalid
+          />
+        </Col>
+      </Row>
+      <hr />
+      <Row>
+        <Col sm={6}>
+          <pre>
+            <code>
+              {`
+                <Form.Label>Disabled</Form.Label>
+                <UniversalInput
+                  name="disabled"
+                  type="text"
+                  placeholder="Disabled"
+                  signal={$formUiKit}
+                  className="mb-8"
+                  disabled
+                />
+                `}
+            </code>
+          </pre>
+        </Col>
+        <Col sm={6} className="my-auto">
+          <Form.Label>Disabled</Form.Label>
+          <UniversalInput
+            name="disabled"
+            type="text"
+            placeholder="Disabled"
+            signal={$formUiKit}
+            className="mb-8"
+            disabled
+          />
+        </Col>
+      </Row>
+      <hr />
+      <Row>
+        <Col sm={6}>
+          <pre>
+            <code>
+              {`
+                <Form.Label>Select Input</Form.Label>
+                <SelectInput
+                  name="select"
+                  signal={$formUiKit}
+                  className="mb-8"
+                  options={[
+                    { label: 'Yes', value: true },
+                    { label: 'No', value: false },
+                  ]}
+                />
                 `}
             </code>
           </pre>
@@ -148,22 +230,11 @@ const UniversalInputs = () => (
           <Form.Label>Select Input</Form.Label>
           <SelectInput
             name="select"
-            defaultValue="Select..."
             signal={$formUiKit}
             className="mb-8"
             options={[
-              {
-                label: 'Select...',
-                value: null,
-              },
-              {
-                label: 'Yes',
-                value: true,
-              },
-              {
-                label: 'No',
-                value: false,
-              },
+              { label: 'Yes', value: true },
+              { label: 'No', value: false },
             ]}
           />
         </Col>
@@ -174,12 +245,12 @@ const UniversalInputs = () => (
           <pre>
             <code>
               {`
-                    <Form.Label>Date Input</Form.Label>
-                    <DatePicker
-                      name="date"
-                      signal={$formUiKit}
-                      className="mb-8"
-                    />
+                <Form.Label>Date Input</Form.Label>
+                <DatePicker
+                  name="date"
+                  signal={$formUiKit}
+                  className="mb-8"
+                />
                 `}
             </code>
           </pre>

@@ -2,7 +2,7 @@ import { Row, Col, Toast, Button } from 'react-bootstrap';
 import { $viewUiKit } from '../UiKit.helpers';
 
 const Toasts = () => (
-  <Row className="text-center" id="toasts">
+  <Row className="text-center mt-48" id="toasts">
     <h2 className="text-decoration-underline">Toasts</h2>
     <Col md={6} className="mb-2">
       <Button

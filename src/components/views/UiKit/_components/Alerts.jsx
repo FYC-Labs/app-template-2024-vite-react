@@ -2,7 +2,7 @@ import { Row, Col, Button, Alert } from 'react-bootstrap';
 import { $viewUiKit } from '../UiKit.helpers';
 
 const Alerts = () => (
-  <Row className="text-center" id="alerts">
+  <Row className="text-center mt-48" id="alerts">
     <Col sm={{ span: 6, offset: 3 }}>
       <h2 className="text-decoration-underline">Alerts</h2>
       <Button onClick={() => $viewUiKit.update({ activeModal: 'alert' })} className="mb-8">Launch Alert Demo</Button>
@@ -35,8 +35,9 @@ const Alerts = () => (
               'primary',
               'secondary',
               'success',
-              'danger',
               'info',
+              'warning',
+              'danger',
             ].map((variant) => (
               <Alert key={variant} variant={variant}>
                 This is a {variant} alert with{' '}

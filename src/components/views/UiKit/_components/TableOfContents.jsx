@@ -41,6 +41,8 @@ const TableOfContents = () => (
         <Nav.Link href="#loader" className="hover">Loader</Nav.Link>
         <Dropdown.Divider className="m-0" />
         <Nav.Link href="#toasts" className="hover">Toasts</Nav.Link>
+        <Dropdown.Divider className="m-0" />
+        <Nav.Link href="#containers" className="hover">Containers</Nav.Link>
       </Dropdown.Menu>
     </Dropdown>
   </Row>

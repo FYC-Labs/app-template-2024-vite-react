@@ -1,4 +1,4 @@
-import { Signal } from 'tools-fyc-react/signals';
+import { Signal } from '@fyclabs/tools-fyc-react/signals';
 
 export const $viewUiKit = Signal({
   activeModal: '',
@@ -10,5 +10,5 @@ export const $formUiKit = Signal({
   number: 0,
   password: '',
   select: null,
-  date: new Date(),
+  date: '',
 });

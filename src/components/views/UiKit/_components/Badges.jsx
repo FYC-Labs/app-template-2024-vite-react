@@ -1,7 +1,7 @@
 import { Row, Col, Button, Badge, Stack } from 'react-bootstrap';
 
 const Badges = () => (
-  <Row className="text-center" id="badges">
+  <Row className="text-center mt-48" id="badges">
     <Col sm={{ span: 6, offset: 3 }}>
       <h2 className="text-decoration-underline">Badges</h2>
       <Button variant="primary">
@@ -13,7 +13,7 @@ const Badges = () => (
         <Badge bg="secondary">Secondary</Badge>
         <Badge bg="success">Success</Badge>
         <Badge bg="danger">Danger</Badge>
-        <Badge bg="warning" text="dark">
+        <Badge bg="warning">
           Warning
         </Badge>
         <Badge bg="info">Info</Badge>
@@ -35,7 +35,7 @@ const Badges = () => (
         <Badge pill bg="danger">
           Danger
         </Badge>
-        <Badge pill bg="warning" text="dark">
+        <Badge pill bg="warning">
           Warning
         </Badge>
         <Badge pill bg="info">
