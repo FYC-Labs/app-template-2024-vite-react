@@ -1,7 +1,7 @@
 import { Row, Col, Spinner, Button } from 'react-bootstrap';
 
 const Loaders = () => (
-  <Row className="text-center" id="loader">
+  <Row className="text-center mt-48" id="loader">
     <Col sm={{ span: 6, offset: 3 }}>
       <h2 className="text-decoration-underline">Loaders</h2>
       <Row>

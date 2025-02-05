@@ -9,7 +9,7 @@ html, body {
 }
 
 .form-control-loadable {
-  color: $dark !important;
+  color: $black !important;
   border: none !important;
   box-shadow: none !important;
   transition: all 0.2s;
@@ -23,4 +23,32 @@ html, body {
   border-radius: 5px 5px 5px 5px !important;
   transition: all 0.2s;
   background-color: $primary !important;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+h2 {
+  font-size: $h2-font-size;
+}
+h3 {
+  font-size: $h3-font-size;
+} 
+h4 {
+  font-size: $h4-font-size;
+}
+h5 {
+  font-size: $h5-font-size;
+}
+.lead {
+  font-size: $lead-font-size;
+}
+body {
+  font-size: $body-font-size;
+}
+small {
+  font-size: $small-font-size;
+}
+.btn {
+  border-radius: 25px;
 }

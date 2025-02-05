@@ -1,22 +1,24 @@
 import { Form } from 'react-bootstrap';
+import { $form } from '@src/signals';
 
 const DatePicker = ({
   name,
-  signal,
+  signal = $form,
   value,
-  placeholder,
   variant = 'form-control', // || form-control-border
   className,
 }) => {
   if (!signal || !name) {
     return new Error(`ZipInput has no signal or name (Name: ${name})`);
   }
+
+  const val = value || signal.value?.[name];
+
   return (
     <Form.Control
-      className={`${variant} ${className}`}
+      className={`${variant} ${className} ${val ? '' : 'text-dark-300'} shadow-none py-8 ps-16`}
       type="date"
-      placeholder={placeholder}
-      value={value || signal.value[name]}
+      value={val ?? ''}
       onChange={(e) => signal.update({ [name]: e.target.value })}
     />
   );

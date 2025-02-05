@@ -1,4 +1,4 @@
-import sleep from 'tools-fyc-react/utils/sleep';
+import sleep from '@fyclabs/tools-fyc-react/utils/sleep';
 
 async function getUsers() {
   await sleep(1500);

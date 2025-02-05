@@ -1,7 +1,7 @@
 import { Row, Col, Dropdown } from 'react-bootstrap';
 
 const Dropdowns = () => (
-  <Row className="text-center" id="dropdown">
+  <Row className="text-center mt-48" id="dropdown">
     <Col sm={{ span: 6, offset: 3 }}>
       <h2 className="text-decoration-underline">Dropdowns</h2>
       <Dropdown className="mb-8" data-bs-theme="dark">

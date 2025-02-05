@@ -1,7 +1,7 @@
 import { Row, Col, Table } from 'react-bootstrap';
 
 const Tables = () => (
-  <Row className="text-center" id="tables">
+  <Row className="text-center mt-48" id="tables">
     <Col sm={12}>
       <h2 className="text-decoration-underline">Tables</h2>
       <Table striped bordered hover>

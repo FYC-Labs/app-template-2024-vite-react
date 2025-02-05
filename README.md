@@ -1,3 +1,12 @@
+# FYC Template for React Projects built with Vite
+
+Please see below these notes for a readme that you can use for your project. 
+
+## Current Status
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/7efff12ae6b4d65a3dcf/maintainability)](https://codeclimate.com/repos/65d6b800671d0200dfc32a2f/maintainability)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5c8ee693fec2439abaeddef2e5400a69)](https://app.codacy.com/gh/FYC-Labs/app-template-2024-vite-react/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 # Project Name
 
 Welcome to [Your Project Name]! 🚀

@@ -2,7 +2,7 @@ import { Row, Col, Image } from 'react-bootstrap';
 import fycLogo from '@src/assets/fycLogo.jpeg';
 
 const Images = () => (
-  <Row className="text-center" id="images">
+  <Row className="text-center mt-48" id="images">
     <Col sm={12}>
       <h2 className="text-decoration-underline">Images</h2>
       <Row>
