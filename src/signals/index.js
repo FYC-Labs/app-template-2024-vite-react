@@ -10,4 +10,4 @@ export const $user = Signal({});
 export const $list = Signal({});
 export const $detail = Signal({});
 export const $form = Signal({});
-export const $filter = Signal({});
+export const $filter = Signal({ page: 1 });

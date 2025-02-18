@@ -55,11 +55,11 @@ const Cards = () => (
           footerActions={[
             {
               text: 'Here is my button text',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
             {
               text: 'Add a task',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
           ]}
         />
@@ -80,11 +80,11 @@ const Cards = () => (
           footerActions={[
             {
               text: 'Here is my button text',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
             {
               text: 'Add a task',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
           ]}
         />
@@ -102,7 +102,7 @@ const Cards = () => (
           footerActions={[
             {
               text: 'my only button',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
           ]}
         />
@@ -119,7 +119,7 @@ const Cards = () => (
           footerActions={[
             {
               text: 'my only button',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
           ]}
         />
@@ -141,11 +141,11 @@ const Cards = () => (
           footerActions={[
             {
               text: 'Here is my button text',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
             {
               text: 'Add a task',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
           ]}
         />
@@ -166,11 +166,11 @@ const Cards = () => (
           footerActions={[
             {
               text: 'Here is my button text',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
             {
               text: 'Add a task',
-              onClick: () => console.log('button clicked'),
+              onClick: () => console.info('button clicked'),
             },
           ]}
         />
