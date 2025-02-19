@@ -17,6 +17,7 @@ const SignalTable = ({
   headers = [],
   rows = [],
   hasCheckboxes = false,
+  hasPagination = true,
   canFilterColumns = false,
   onColumnToggle,
   totalCount,
@@ -24,7 +25,6 @@ const SignalTable = ({
   currentPage,
   paginationMaxButtonAmount = 5,
   itemsPerPageAmount = 10,
-
 }) => {
   const handleToggleColumn = (header) => {
     if (typeof onColumnToggle === 'function') {
@@ -166,7 +166,6 @@ const SignalTable = ({
             >
               {hasCheckboxes && (
                 <td className="border-0 py-16">
-                  {console.log($view.value?.selectedItems?.some(({ id }) => id === row.id), row)}
                   <Form.Check
                     checked={$view.value?.selectedItems?.some(({ id }) => id === row.id)}
                     onClick={(e) => {
@@ -181,7 +180,6 @@ const SignalTable = ({
                       } else {
                         selectedItems.push(row);
                       }
-                      console.log(selectedItems);
                       $view.update({ selectedItems, lastCheckedIndex: rowIdx, isShiftKey: false });
                     }}
                   />
@@ -199,13 +197,15 @@ const SignalTable = ({
           ))}
         </tbody>
       </Table>
-      <Pagination
-        itemsPerPageAmount={paginationMaxButtonAmount}
-        paginationMaxButtonAmount={paginationMaxButtonAmount}
-        totalItemsCount={totalCount}
-        currentPageItemsCount={currentPageItemsCount || 0}
-        currentPage={currentPage}
-      />
+      {hasPagination && (
+        <Pagination
+          itemsPerPageAmount={paginationMaxButtonAmount}
+          paginationMaxButtonAmount={paginationMaxButtonAmount}
+          totalItemsCount={totalCount}
+          currentPageItemsCount={currentPageItemsCount || 0}
+          currentPage={currentPage}
+        />
+      )}
     </div>
   );
 };
