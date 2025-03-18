@@ -1,7 +1,6 @@
-/* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable no-confusing-arrow */
+
 import React, { useEffect } from 'react';
 import { faSort, faSortDown, faSortUp, faGear, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,6 +24,7 @@ const SignalTable = ({
   currentPage,
   paginationMaxButtonAmount = 5,
   itemsPerPageAmount = 10,
+  rowClassName = '',
 }) => {
   const handleToggleColumn = (header) => {
     if (typeof onColumnToggle === 'function') {
@@ -144,7 +144,7 @@ const SignalTable = ({
           </tr>
         </thead>
         <tbody>
-          {!rows.length && !$view.value.isTableLoading && (
+          {!rows.length && !$view.value?.isTableLoading && (
             <tr>
               <td className="border-0 w-100" colSpan={headers.length + (canFilterColumns ? 2 : 1)}>
                 No records found
@@ -163,6 +163,7 @@ const SignalTable = ({
               key={rowIdx}
               onClick={() => onRowClick(row)}
               style={{ cursor: 'pointer', visibility: $view.value?.isTableLoading ? 'hidden' : 'visible' }}
+              className={rowClassName}
             >
               {hasCheckboxes && (
                 <td className="border-0 py-16">

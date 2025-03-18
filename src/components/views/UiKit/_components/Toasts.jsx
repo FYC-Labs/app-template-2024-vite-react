@@ -1,5 +1,5 @@
 import { Row, Col, Toast, Button } from 'react-bootstrap';
-import { $viewUiKit } from '../UiKit.helpers';
+import { $viewUiKit } from '../_helpers/uikit.consts';
 
 const Toasts = () => (
   <Row className="text-center mt-48" id="toasts">

@@ -11,3 +11,4 @@ export const $list = Signal({});
 export const $detail = Signal({});
 export const $form = Signal({});
 export const $filter = Signal({ page: 1 });
+export const $alert = Signal({});

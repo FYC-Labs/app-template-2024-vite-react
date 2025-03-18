@@ -3,7 +3,7 @@ import DatePicker from '@src/components/global/Inputs/DatePicker';
 import SelectInput from '@src/components/global/Inputs/SelectInput';
 import UniversalInput from '@src/components/global/Inputs/UniversalInput';
 import Password from '@src/components/global/Inputs/Password';
-import { $formUiKit } from '../UiKit.helpers';
+import { $formUiKit } from '../_helpers/uikit.consts';
 
 const UniversalInputs = () => (
   <Row className="text-start mt-48" id="universal-inputs">

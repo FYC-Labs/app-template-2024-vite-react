@@ -52,3 +52,47 @@ small {
 .btn {
   border-radius: 25px;
 }
+.z-index-9999 {
+  z-index: 9999 !important;
+}
+@each $color-name, $color-value in $theme-colors {
+  .notification-#{$color-name} {
+    background-color: lighten($color-value, 30%) !important;
+    color: darken($color-value, 30%) !important;
+    border-color: $color-value !important;
+  }
+}
+.notification {
+  font-size: 14px;
+  color: #505050; // $dark-400 in the figma
+  font-weight: 500;
+  border: 1px solid $warning;
+
+  .decoration-icon {
+    margin-right: 16px;
+  }
+
+  &.notification-warning {
+    background-color: $warning;
+  }
+
+  &.notification-success {
+    background-color: $success;
+    border-color: $success;
+  }
+
+  &.notification-error {
+    background-color: $danger;
+    border-color: $danger;
+  }
+
+  ul {
+    border-top: 1px solid $warning;
+    border-color: inherit;
+    margin: 0;
+  }
+
+  li {
+    line-height: 20px;
+  }
+}

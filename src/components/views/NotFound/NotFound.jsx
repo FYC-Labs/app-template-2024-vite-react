@@ -1,7 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-function HomeNotFound() {
+function NotFound() {
   return (
     <Container fluid className="d-flex align-items-center justify-content-center vh-100 text-center">
       <Row>
@@ -15,4 +15,4 @@ function HomeNotFound() {
   );
 }
 
-export default HomeNotFound;
+export default NotFound;

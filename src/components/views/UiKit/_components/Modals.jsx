@@ -1,5 +1,5 @@
 import { Row, Col, Button, Modal } from 'react-bootstrap';
-import { $viewUiKit } from '../UiKit.helpers';
+import { $viewUiKit } from '../_helpers/uikit.consts';
 
 const Modals = () => (
   <Row className="text-center mt-48" id="modal">
