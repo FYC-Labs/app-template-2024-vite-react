@@ -2,7 +2,7 @@ import { Form } from 'react-bootstrap';
 import { $form } from '@src/signals';
 import InputBoxGroup from '@src/components/global/Inputs/UniversalInput/components/InputBoxGroup';
 import CheckBoxInput from '@src/components/global/Inputs/UniversalInput/components/CheckBoxInput';
-import { isEmailValid, formatPhone, formatDate, formatTime } from '@src/components/global/Inputs/UniversalInput/UniversalInput.helpers';
+import { formatDate, formatPhone, formatTime, isEmailValid } from './_helpers/universalinput.events';
 
 const UniversalInput = ({
   type,

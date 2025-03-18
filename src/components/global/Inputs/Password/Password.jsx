@@ -6,7 +6,7 @@ import {
   $password,
   getBorderColor,
   isPasswordInvalid,
-} from '@src/components/global/Inputs/Password/Password.helpers';
+} from '@src/components/global/Inputs/Password/_helpers/password.events';
 
 const Password = ({
   name,

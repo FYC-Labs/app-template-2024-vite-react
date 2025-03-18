@@ -53,5 +53,9 @@ module.exports = {
     'jsx-a11y/click-events-have-key-events': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'import/no-unresolved': 'off',
+    'no-use-before-define': 'off',
+    'react/no-unstable-nested-components': [
+      'off',
+    ],
   },
 }

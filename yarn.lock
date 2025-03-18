@@ -973,10 +973,10 @@
   dependencies:
     prop-types "^15.8.1"
 
-"@fyclabs/tools-fyc-react@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@fyclabs/tools-fyc-react/-/tools-fyc-react-0.0.2.tgz#06f151e452a3fce79d186859445a86ab5b88403f"
-  integrity sha512-jhOohUntuaHGhPOlt+ikT43H5Sqw9RujW1UP641CQrJXjJ0701udZqivlT/JTz3aZf2e6YYvkbmfRdVloKu4mg==
+"@fyclabs/tools-fyc-react@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@fyclabs/tools-fyc-react/-/tools-fyc-react-0.0.3.tgz#3f8311a2213868b28be29558bd01bedfeb170185"
+  integrity sha512-foZMpJIw3c+GdlXUm4dGy4zO5Jj6elzUOR6QEMN9DbGQBzY0DA0sMVqcorTwXIQifhGKJnr5SU74HO+IAWwEbQ==
   dependencies:
     "@preact/signals-react" "1.3.8"
     react "^18.2.0"
