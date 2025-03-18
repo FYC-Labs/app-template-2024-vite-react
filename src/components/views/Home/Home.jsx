@@ -5,6 +5,7 @@ import Loadable from '@src/components/global/Loadable';
 import { $detail } from '@fyclabs/tools-fyc-react/signals';
 import users from '@src/api/users.api';
 import { fetchAndSetSignal } from '@fyclabs/tools-fyc-react/signals/utils';
+import useCleanup from '@src/utils/useCleanup';
 
 const Home = () => {
   useEffectAsync(async () => {
@@ -14,6 +15,8 @@ const Home = () => {
       params: { id: 1 },
     });
   });
+
+  useCleanup($detail); // || useCleanup([$detail, $detail2])
 
   return (
     <Container fluid className="vh-100 d-flex align-items-center justify-content-center">
